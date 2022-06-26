@@ -8,19 +8,20 @@
 int main()
 {
     std::string limit;
-    uint32_t sum{};
 
     std::cout << "Upper limit:";
     std::cin >> limit;
 
+    uint32_t sum{};
+    unsigned long upper_limit;
     try
     {
-        unsigned long upperLimit{std::stoul(limit)};
-        if (upperLimit > std::numeric_limits<uint16_t>::max())
+        upper_limit = std::stoul(limit);
+        if (upper_limit > std::numeric_limits<uint16_t>::max())
         {
             throw std::invalid_argument("Upper limit too large");
         }
-        sum = solution(static_cast<uint16_t>(upperLimit));
+        sum = sum_of_naturals_divisible_by_3_and_5(static_cast<uint16_t>(upper_limit));
     }
     catch (std::exception &e)
     {
@@ -28,6 +29,7 @@ int main()
         return 0;
     }
 
-    std::cout << "sum = " << sum << std::endl;
+    std::cout << "sum of naturals up to " << upper_limit
+              << " divisible by 3 and 5 is " << sum << std::endl;
     return 0;
 }

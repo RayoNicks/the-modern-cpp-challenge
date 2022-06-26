@@ -16,10 +16,7 @@
 #include <vector>
 
 /**
- * @brief The least common multiple (lcm) of two or more non-zero integers, is
- * the smallest positive integer that is divisible by all of them. A possible
- * way to compute the least common multiple is by reducing the problem to
- * computing the greatest common divisor.
+ * @brief Compute the least common multiple (lcm) of two non-zero integers.
  *
  * @param a First positive number
  * @param b Second positive number
@@ -28,9 +25,7 @@
 uint64_t least_common_multiple(uint64_t a, uint64_t b);
 
 /**
- * @brief To compute the lcs for more than two integers, computer the first two
- * number's lcm first, then compute the lcm of the last and the third number
- * and so on.
+ * @brief Compute the lcm of multiple non-zero integers.
  *
  * @param vec Positive number list
  * @return uint64_t

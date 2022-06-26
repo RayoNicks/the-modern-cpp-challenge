@@ -29,10 +29,7 @@ bool is_prime(uint32_t num)
 
 /**
  * @brief Starting from the given number, towards 1 until the first prime is
- * encountered
- *
- * @param limit
- * @return uint32_t
+ * encountered.
  */
 uint32_t largest_prime(uint32_t limit)
 {

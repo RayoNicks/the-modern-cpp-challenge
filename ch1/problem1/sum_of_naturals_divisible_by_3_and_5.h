@@ -15,14 +15,10 @@
 #include <cstdint>
 
 /**
- * @brief The solution to this problem is to iterate through all numbers from 3
- * (1 and 2 are not divisible by 3 so it does not make sense to test them) up to
- * the limit entered by the user. Use the modulo operation to check that the rest
- * of the division of a number by 3 and 5 is 0. However, the trick to being able
- * to sum up to a larger limit is to use long long and not int or long for the sum,
- * which would result in an overflow before summing up to 100,000
+ * @brief To reduce the test time, the upper limit is a 16-bit width positive
+ * number so the sum could be 32 bits.
  *
  * @param limit The upper limit in string
  * @return uint32_t
  */
-uint32_t solution(uint16_t limit);
+uint32_t sum_of_naturals_divisible_by_3_and_5(uint16_t limit);

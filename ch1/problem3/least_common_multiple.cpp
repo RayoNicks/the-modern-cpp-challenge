@@ -4,6 +4,12 @@
 #include <numeric>
 #include <stdexcept>
 
+/**
+ * @brief The least common multiple (lcm) of two or more non-zero integers, is
+ * the smallest positive integer that is divisible by all of them. A possible
+ * way to compute the least common multiple is by reducing the problem to
+ * computing the greatest common divisor.
+ */
 uint64_t least_common_multiple(uint64_t a, uint64_t b)
 {
     if (a == 0 || b == 0)
@@ -20,6 +26,11 @@ uint64_t least_common_multiple(uint64_t a, uint64_t b)
     return lcm;
 }
 
+/**
+ * @brief To compute the lcs for more than two integers, computer the first two
+ * number's lcm first, then compute the lcm of the last and the third number
+ * and so on.
+ */
 uint64_t least_common_multiple(const std::vector<uint64_t> &vec)
 {
     uint64_t lcm{1};

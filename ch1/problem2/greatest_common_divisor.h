@@ -15,10 +15,8 @@
 #include <cstdint>
 
 /**
- * @brief The greatest common divisor (gcd in short) of two or more non-zero
- * integers, also known as the greatest common factor (gcf), is the greatest
- * positive integer that divides all of them. There are several ways the gcd
- * could be computed; an efficient method is Euclid's algorithm.
+ * @brief Compute the greatest common divisor (gcd in short) of two non-zero
+ * integers.
  *
  * @param a The first positive number
  * @param b The second positive number

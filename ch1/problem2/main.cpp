@@ -6,17 +6,17 @@
 
 int main()
 {
-    std::string aInStr, bInStr;
+    std::string a_in_str, b_in_str;
 
     std::cout << "First positive number:";
-    std::cin >> aInStr;
+    std::cin >> a_in_str;
     std::cout << "Second positive number:";
-    std::cin >> bInStr;
+    std::cin >> b_in_str;
 
     uint64_t gcd{};
     try
     {
-        gcd = greatest_common_divisor(std::stoull(aInStr), std::stoull(bInStr));
+        gcd = greatest_common_divisor(std::stoull(a_in_str), std::stoull(b_in_str));
     }
     catch (const std::exception &e)
     {
@@ -24,6 +24,7 @@ int main()
         return 0;
     }
 
-    std::cout << "gcd = " << gcd << std::endl;
+    std::cout << "greatest common divisor of " << a_in_str << " and "
+              << b_in_str << " is " << gcd << std::endl;
     return 0;
 }
