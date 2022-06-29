@@ -18,8 +18,8 @@
 /**
  * @brief Compute the least common multiple (lcm) of two non-zero integers.
  *
- * @param a First positive number
- * @param b Second positive number
+ * @param a First positive number.
+ * @param b Second positive number.
  * @return uint64_t
  */
 uint64_t least_common_multiple(uint64_t a, uint64_t b);
@@ -27,7 +27,7 @@ uint64_t least_common_multiple(uint64_t a, uint64_t b);
 /**
  * @brief Compute the lcm of multiple non-zero integers.
  *
- * @param vec Positive number list
+ * @param vec Positive number list.
  * @return uint64_t
  */
 uint64_t least_common_multiple(const std::vector<uint64_t> &vec);

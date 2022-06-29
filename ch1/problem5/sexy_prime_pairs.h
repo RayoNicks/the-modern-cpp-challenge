@@ -17,9 +17,9 @@
 #include <vector>
 
 /**
- * @brief Find all sexy prime pairs smaller than limit
+ * @brief Find all sexy prime pairs smaller than limit.
  * 
- * @param limit Upper limit of the sexy prime pair
+ * @param limit Upper limit of the sexy prime pairs.
  * @return std::vector<std::pair<uint32_t, uint32_t>> 
  */
 std::vector<std::pair<uint32_t, uint32_t>> sexy_prime_pairs(uint32_t limit);

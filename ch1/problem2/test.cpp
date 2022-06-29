@@ -4,7 +4,7 @@
 
 #include <numeric>
 
-TEST(test, positive)
+TEST(test, greatest_common_divisor)
 {
     for (uint64_t a = 1; a < 100; a++)
     {

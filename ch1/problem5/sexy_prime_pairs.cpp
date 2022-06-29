@@ -3,7 +3,7 @@
 
 /**
  * @brief Sexy prime numbers are prime numbers that differ from each other by
- * six (for example 5 and 11, or 13 and 19)
+ * six (for example 5 and 11, or 13 and 19).
  *
  * @param limit
  * @return std::vector<std::pair<uint32_t, uint32_t>>

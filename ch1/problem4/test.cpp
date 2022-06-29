@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-TEST(test, prime)
+TEST(test, is_prime)
 {
     EXPECT_TRUE(is_prime(2));
     EXPECT_TRUE(is_prime(3));

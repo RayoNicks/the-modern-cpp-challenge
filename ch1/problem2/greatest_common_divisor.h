@@ -18,8 +18,8 @@
  * @brief Compute the greatest common divisor (gcd in short) of two non-zero
  * integers.
  *
- * @param a The first positive number
- * @param b The second positive number
+ * @param a The first positive number.
+ * @param b The second positive number.
  * @return uint64_t
  */
 uint64_t greatest_common_divisor(uint64_t a, uint64_t b);

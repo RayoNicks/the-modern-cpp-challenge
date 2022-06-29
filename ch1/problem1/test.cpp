@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-TEST(test, positive)
+TEST(test, sum_of_naturals_divisible_by_3_and_5)
 {
     EXPECT_EQ(sum_of_naturals_divisible_by_3_and_5(0), 0);
     EXPECT_EQ(sum_of_naturals_divisible_by_3_and_5(1), 0);

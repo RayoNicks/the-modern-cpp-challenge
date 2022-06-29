@@ -1,6 +1,6 @@
 #include "abundant_numbers.h"
 
-bool is_abundant_number(uint32_t num)
+uint64_t sum_of_proper_divisors(uint32_t num)
 {
     uint64_t sum = 1;
 
@@ -16,7 +16,20 @@ bool is_abundant_number(uint32_t num)
         }
     }
 
-    return sum > static_cast<uint64_t>(num);
+    return sum;
+}
+
+/**
+ * @brief An abundant number is a number for which the sum of its proper
+ * divisors is greater than the number itself.
+ *
+ * @param num
+ * @return true
+ * @return false
+ */
+bool is_abundant_number(uint32_t num)
+{
+    return sum_of_proper_divisors(num) > static_cast<uint64_t>(num);
 }
 
 std::vector<uint32_t> abundant_numbers(uint32_t limit)

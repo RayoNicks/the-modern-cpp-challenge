@@ -16,18 +16,26 @@
 #include <vector>
 
 /**
- * @brief Determine if a number is an abundant nubmer
+ * @brief Compute sum of proper divisors of a number.
  *
- * @param num Number to determine
- * @return true Abundant
- * @return false Deficient or perfect
+ * @param num Number to compute.
+ * @return uint64_t
+ */
+uint64_t sum_of_proper_divisors(uint32_t num);
+
+/**
+ * @brief Determine if a number is an abundant number.
+ *
+ * @param num Number to determine.
+ * @return true Abundant.
+ * @return false Deficient or perfect.
  */
 bool is_abundant_number(uint32_t num);
 
 /**
- * @brief Find all abundant numbers smaller than limit
+ * @brief Find all abundant numbers smaller than limit.
  *
- * @param limit
+ * @param limit Upper limit of abundant numbers.
  * @return std::vector<uint32_t>
  */
 std::vector<uint32_t> abundant_numbers(uint32_t limit);

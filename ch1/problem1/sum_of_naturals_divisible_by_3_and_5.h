@@ -18,7 +18,7 @@
  * @brief To reduce the test time, the upper limit is a 16-bit width positive
  * number so the sum could be 32 bits.
  *
- * @param limit The upper limit in string
+ * @param limit Upper limit.
  * @return uint32_t
  */
 uint32_t sum_of_naturals_divisible_by_3_and_5(uint16_t limit);

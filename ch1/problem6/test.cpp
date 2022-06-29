@@ -9,7 +9,7 @@
 
 #include <vector>
 
-TEST(test, abundant)
+TEST(test, is_abundant_number)
 {
     // clang-format off
     std::vector<bool> matcher{

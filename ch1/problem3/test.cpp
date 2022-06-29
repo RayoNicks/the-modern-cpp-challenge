@@ -5,7 +5,7 @@
 #include <limits>
 #include <numeric>
 
-TEST(test, positive)
+TEST(test, least_common_multiple)
 {
     for (uint64_t a = 1; a < 100; a++)
     {

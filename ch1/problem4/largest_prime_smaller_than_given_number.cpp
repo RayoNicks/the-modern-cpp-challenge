@@ -14,7 +14,7 @@ bool is_prime(uint32_t num)
     {
         /**
          * @brief i is odd and equals 3k + 2, so we only need to determine i
-         * and i + 2 if the step length is 6
+         * and i + 2 if the step length is 6.
          */
         for (uint32_t i = 5; i * i <= num; i += 6)
         {
