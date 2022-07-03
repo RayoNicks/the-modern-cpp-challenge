@@ -9,11 +9,12 @@ int main()
 {
     std::string limit;
 
-    std::cout << "Upper limit:";
+    std::cout << "Upper limit: ";
     std::cin >> limit;
 
     std::vector<std::pair<uint32_t, uint32_t>> pairs;
     unsigned long upper_limit{};
+
     try
     {
         upper_limit = std::stoul(limit);
