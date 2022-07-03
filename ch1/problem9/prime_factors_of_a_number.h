@@ -16,9 +16,9 @@
 #include <vector>
 
 /**
- * @brief Return primes factors of a number
+ * @brief Return primes factors of a number.
  *
- * @param num Number to decompose
+ * @param num Number to decompose.
  * @return std::vector<uint32_t>
  */
 std::vector<uint32_t> prime_factors(uint32_t num);

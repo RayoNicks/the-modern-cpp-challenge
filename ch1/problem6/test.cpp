@@ -1,5 +1,5 @@
 /**
- * @brief Test data comes from http://oeis.org/A005101
+ * @brief Test data comes from http://oeis.org/A005101.
  */
 
 #include "abundant_numbers.h"

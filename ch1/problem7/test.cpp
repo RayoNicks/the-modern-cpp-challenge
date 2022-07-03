@@ -1,5 +1,5 @@
 /**
- * @brief Test data comes from http://oeis.org/A259180
+ * @brief Test data comes from http://oeis.org/A259180.
  */
 
 #include "amicable_numbers.h"
