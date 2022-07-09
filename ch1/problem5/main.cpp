@@ -20,7 +20,7 @@ int main()
         upper_limit = std::stoul(limit);
         if (upper_limit > std::numeric_limits<uint32_t>::max())
         {
-            throw std::invalid_argument("Upper limit too large");
+            throw std::invalid_argument("Upper limit too large.");
         }
         pairs = sexy_prime_pairs(static_cast<uint32_t>(upper_limit));
     }

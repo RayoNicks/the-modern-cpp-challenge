@@ -19,7 +19,7 @@ int main()
         number = std::stoul(number_in_string);
         if (number > std::numeric_limits<uint32_t>::max())
         {
-            throw std::invalid_argument("Number too large");
+            throw std::invalid_argument("Number too large.");
         }
         factors = prime_factors(static_cast<uint32_t>(number));
     }
