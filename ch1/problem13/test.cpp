@@ -3,7 +3,7 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 
-TEST(test, collatz_sequence)
+TEST(test, approximate_pi)
 {
     EXPECT_THAT(compute_pi(), ::testing::DoubleNear(3.14, 1E-2));
 }
