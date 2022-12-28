@@ -1,6 +1,5 @@
-#include "sum_of_naturals_divisible_by_3_and_5.h"
-
 #include "gtest/gtest.h"
+#include "sum_of_naturals_divisible_by_3_and_5.h"
 
 TEST(test, sum_of_naturals_divisible_by_3_and_5)
 {

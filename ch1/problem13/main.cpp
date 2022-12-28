@@ -1,6 +1,6 @@
-#include "computing_the_value_of_pi.h"
-
 #include <iostream>
+
+#include "computing_the_value_of_pi.h"
 
 int main()
 {
@@ -12,22 +12,17 @@ int main()
     unsigned long sample_points;
     double pi;
 
-    try
-    {
+    try {
         sample_points = std::stoul(sample);
-        if (sample_points > 100000000)
-        {
+        if (sample_points > 100000000) {
             throw std::invalid_argument("Too many sample points.");
         }
         pi = compute_pi(sample_points);
-    }
-    catch (const std::exception &e)
-    {
+    } catch (const std::exception &e) {
         std::cerr << e.what() << std::endl;
         return 0;
     }
 
-    std::cout << "Approximate value of pi by Monte Carlo simulation with "
-              << sample_points << " points is " << pi << std::endl;
+    std::cout << "Approximate value of pi by Monte Carlo simulation with " << sample_points << " points is " << pi << std::endl;
     return 0;
 }

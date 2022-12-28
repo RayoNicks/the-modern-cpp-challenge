@@ -29,11 +29,9 @@ double compute_pi(int samples)
     std::uniform_real_distribution<double> distribution{0.0, 1.0};
     int hit = 0;
 
-    for (int i = 0; i < samples; i++)
-    {
+    for (int i = 0; i < samples; i++) {
         double x = distribution(engine), y = distribution(engine);
-        if (y <= std::sqrt(1 - std::pow(x, 2)))
-        {
+        if (y <= std::sqrt(1 - std::pow(x, 2))) {
             hit += 1;
         }
     }

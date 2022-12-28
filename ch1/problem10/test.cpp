@@ -1,5 +1,4 @@
 #include "gray_code.h"
-
 #include "gtest/gtest.h"
 
 TEST(test, gray_encoding)

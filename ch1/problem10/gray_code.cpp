@@ -13,8 +13,7 @@ uint32_t gray_encoding(uint32_t binary_number)
 {
     std::bitset<32> bin_rep{binary_number}, gray_rep;
 
-    for (int i = 0; i < 31; i++)
-    {
+    for (int i = 0; i < 31; i++) {
         gray_rep[i] = bin_rep[i] ^ bin_rep[i + 1];
     }
 
@@ -34,8 +33,7 @@ uint32_t gray_decoding(uint32_t gray_number)
     std::bitset<32> gray_rep{gray_number}, bin_rep;
 
     bin_rep[31] = gray_rep[31];
-    for (int i = 30; i >= 0; i--)
-    {
+    for (int i = 30; i >= 0; i--) {
         bin_rep[i] = bin_rep[i + 1] ^ gray_rep[i];
     }
 

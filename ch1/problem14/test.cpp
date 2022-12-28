@@ -1,6 +1,5 @@
-#include "validating_isbns.h"
-
 #include "gtest/gtest.h"
+#include "validating_isbns.h"
 
 TEST(test, valid_isbn_10)
 {

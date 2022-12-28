@@ -34,24 +34,19 @@ static std::vector<std::pair<uint32_t, std::string>> base{
  */
 std::string roman_encoding(uint32_t arabic)
 {
-    if (arabic >= 4000)
-    {
+    if (arabic >= 4000) {
         throw std::invalid_argument("Number must less than 4000.");
     }
 
-    if (arabic == 0)
-    {
+    if (arabic == 0) {
         return std::string("nulla");
     }
 
     std::string roman;
 
-    while (arabic != 0)
-    {
-        for (auto &p : base)
-        {
-            if (arabic >= p.first)
-            {
+    while (arabic != 0) {
+        for (auto &p : base) {
+            if (arabic >= p.first) {
                 arabic -= p.first;
                 roman += p.second;
                 break;
@@ -71,29 +66,24 @@ std::string roman_encoding(uint32_t arabic)
  */
 uint32_t roman_decoding(const std::string &roman)
 {
-    if (roman == "nulla")
-    {
+    if (roman == "nulla") {
         return 0;
     }
 
     uint32_t arabic = 0;
     bool parsed{};
 
-    for (size_t i = 0; i < roman.length();)
-    {
+    for (size_t i = 0; i < roman.length();) {
         parsed = false;
 
-        for (auto &p : base)
-        {
-            if (p.second.length() == 2 && i + 1 < roman.length() && p.second == roman.substr(i, 2))
-            {
+        for (auto &p : base) {
+            if (p.second.length() == 2 && i + 1 < roman.length() && p.second == roman.substr(i, 2)) {
                 arabic += p.first;
                 i += 2;
                 parsed = true;
                 break;
             }
-            if (p.second == roman.substr(i, 1))
-            {
+            if (p.second == roman.substr(i, 1)) {
                 arabic += p.first;
                 i++;
                 parsed = true;
@@ -101,18 +91,15 @@ uint32_t roman_decoding(const std::string &roman)
             }
         }
 
-        if (!parsed)
-        {
+        if (!parsed) {
             throw std::invalid_argument("Unexpected Roman symbol.");
         }
     }
 
-    if (roman_encoding(arabic) == roman)
-    {
+    if (roman_encoding(arabic) == roman) {
         return arabic;
     }
-    else
-    {
+    else {
         throw std::invalid_argument("Invalid Roman number.");
         return 0;
     }

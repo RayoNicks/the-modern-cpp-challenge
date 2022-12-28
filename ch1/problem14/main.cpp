@@ -1,6 +1,6 @@
-#include "validating_isbns.h"
-
 #include <iostream>
+
+#include "validating_isbns.h"
 
 int main()
 {
@@ -11,12 +11,9 @@ int main()
 
     bool valid;
 
-    try
-    {
+    try {
         valid = valid_isbn13(isbn10);
-    }
-    catch (const std::exception &e)
-    {
+    } catch (const std::exception &e) {
         std::cerr << e.what() << std::endl;
         return 0;
     }

@@ -1,6 +1,5 @@
-#include "largest_prime_smaller_than_given_number.h"
-
 #include "gtest/gtest.h"
+#include "largest_prime_smaller_than_given_number.h"
 
 TEST(test, is_prime)
 {

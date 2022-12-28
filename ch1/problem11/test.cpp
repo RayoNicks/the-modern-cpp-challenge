@@ -1,5 +1,4 @@
 #include "converting_numerical_values_to_roman.h"
-
 #include "gtest/gtest.h"
 
 TEST(test, roman_encoding)

@@ -1,7 +1,6 @@
 #include "computing_the_value_of_pi.h"
-
-#include "gtest/gtest.h"
 #include "gmock/gmock.h"
+#include "gtest/gtest.h"
 
 TEST(test, approximate_pi)
 {

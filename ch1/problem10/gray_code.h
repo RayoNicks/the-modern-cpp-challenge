@@ -32,15 +32,14 @@ uint32_t gray_encoding(uint32_t binary_number);
  */
 uint32_t gray_decoding(uint32_t gray);
 
-template <uint32_t bits>
+template<uint32_t bits>
 std::vector<std::bitset<bits>> gray_representation()
 {
     static_assert(bits <= 16, "Too many numbers to enumerate");
 
     std::vector<std::bitset<bits>> grays;
 
-    for (uint32_t i = 0; i < (1 << bits); i++)
-    {
+    for (uint32_t i = 0; i < (1 << bits); i++) {
         grays.push_back(std::bitset<bits>(gray_encoding(i)));
     }
 

@@ -1,6 +1,6 @@
-#include "converting_numerical_values_to_roman.h"
-
 #include <iostream>
+
+#include "converting_numerical_values_to_roman.h"
 
 int main()
 {
@@ -9,12 +9,9 @@ int main()
     std::cout << "Arabic number: ";
     std::cin >> number;
 
-    try
-    {
+    try {
         roman = roman_encoding(static_cast<uint32_t>(std::stoul(number)));
-    }
-    catch (const std::exception &e)
-    {
+    } catch (const std::exception &e) {
         std::cerr << e.what() << std::endl;
         return 0;
     }

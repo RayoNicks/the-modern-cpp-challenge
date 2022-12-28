@@ -1,7 +1,7 @@
-#include "largest_collatz_sequence.h"
-
 #include <iostream>
 #include <limits>
+
+#include "largest_collatz_sequence.h"
 
 int main()
 {
@@ -13,17 +13,13 @@ int main()
     unsigned long upper_limit{};
     std::pair<uint32_t, uint64_t> largest;
 
-    try
-    {
+    try {
         upper_limit = std::stoul(limit);
-        if (upper_limit > 1000000)
-        {
+        if (upper_limit > 1000000) {
             throw std::invalid_argument("Upper limit too large.");
         }
         largest = largest_collatz_sequence(static_cast<uint32_t>(upper_limit));
-    }
-    catch (const std::exception &e)
-    {
+    } catch (const std::exception &e) {
         std::cerr << e.what() << std::endl;
         return 0;
     }

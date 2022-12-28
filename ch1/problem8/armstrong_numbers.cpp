@@ -15,16 +15,12 @@ std::vector<uint32_t> armstrong_numbers()
 {
     std::vector<uint32_t> numbers;
 
-    for (uint32_t a = 1; a <= 9; a++)
-    {
-        for (uint32_t b = 0; b <= 9; b++)
-        {
-            for (uint32_t c = 0; c <= 9; c++)
-            {
+    for (uint32_t a = 1; a <= 9; a++) {
+        for (uint32_t b = 0; b <= 9; b++) {
+            for (uint32_t c = 0; c <= 9; c++) {
                 uint32_t num = a * 100 + b * 10 + c;
                 uint32_t power_sum = std::pow(a, 3) + std::pow(b, 3) + std::pow(c, 3);
-                if(num == power_sum)
-                {
+                if (num == power_sum) {
                     numbers.push_back(num);
                 }
             }
