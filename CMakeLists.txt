@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(cppchallenger LANGUAGES CXX)
+project(cpp-challenge VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -16,6 +16,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(googletest)
 
+find_package(Doxygen REQUIRED)
 enable_testing()
 
 add_subdirectory(ch1)

@@ -1,6 +1,6 @@
 # The Modern C++ Challenge Become an expert programmer by solving real-world problems
 
-Learning CMake, modern C++, error handling and exception safety.
+Learning CMake, Doxygen, Google Test and GitHub Actions.
 
 Also collecting interview quesitons.
 
